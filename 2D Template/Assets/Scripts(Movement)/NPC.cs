@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro.Examples;
 using UnityEngine;
 using UnityEngine.UI;
-public class Dialogoue: MonoBehaviour
+public class NPC : MonoBehaviour
 {
     public GameObject dialoguePanel;
     public Text dialogueText;
@@ -17,7 +16,11 @@ public class Dialogoue: MonoBehaviour
 
     void Update()
     {
+<<<<<<< HEAD:2D Template/Assets/Scripts/Dialogue.cs
         if(Input.GetKeyDown(KeyCode.E)  && playerIsClose)
+=======
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
+>>>>>>> bc65054e6e624a7a5533fa831cd39050fb0e9f9b:2D Template/Assets/Scripts(Movement)/NPC.cs
         {
 
             if (dialoguePanel.activeInHierarchy)
@@ -25,9 +28,9 @@ public class Dialogoue: MonoBehaviour
                 zeroText();
             }
             else
-            { 
+            {
                 dialoguePanel.SetActive(true);
-                StartCoroutine(Typing() );
+                StartCoroutine(Typing());
             }
         }
         if (dialogueText.text == dialogue[index])
@@ -45,9 +48,13 @@ public class Dialogoue: MonoBehaviour
 
     IEnumerator Typing()
     {
+<<<<<<< HEAD:2D Template/Assets/Scripts/Dialogue.cs
         foreach (char letter in dialogue[indez].ToCharArray())
+=======
+        foreach (char letter in dialogue[index].ToCharArray())
+>>>>>>> bc65054e6e624a7a5533fa831cd39050fb0e9f9b:2D Template/Assets/Scripts(Movement)/NPC.cs
         {
-            dialogueText.text += letter; 
+            dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
         }
 
@@ -68,9 +75,7 @@ public class Dialogoue: MonoBehaviour
             zeroText();
         }
     }
-
-    // Update is called once per frame
-   private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
@@ -85,4 +90,8 @@ public class Dialogoue: MonoBehaviour
             zeroText();
         }
     }
+
+    // Update is called once per frame
+
+
 }
