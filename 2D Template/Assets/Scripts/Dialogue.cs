@@ -13,10 +13,11 @@ public class Dialogoue: MonoBehaviour
     public GameObject contButton;
     public float wordSpeed;
     public bool playerIsClose;
+    private int indez;
 
     void Update()
     {
-        if(Input.GetKeyDown(keyCode.E)  && playerIsClose)
+        if(Input.GetKeyDown(KeyCode.E)  && playerIsClose)
         {
 
             if (dialoguePanel.activeInHierarchy)
@@ -44,7 +45,7 @@ public class Dialogoue: MonoBehaviour
 
     IEnumerator Typing()
     {
-        foreach(char letter in dialogue[indez].ToCharArray())
+        foreach (char letter in dialogue[indez].ToCharArray())
         {
             dialogueText.text += letter; 
             yield return new WaitForSeconds(wordSpeed);
