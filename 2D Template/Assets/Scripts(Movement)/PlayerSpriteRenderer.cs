@@ -30,21 +30,23 @@ public class PlayerSpriteRenderer : MonoBehaviour
 
     private void LateUpdate()
     {
-        run.enabled = movement.running;
-
-        if (movement.UpWalk)
+        if (movement.Rightwalk == true)
         {
-            spriteRenderer.sprite = Upwalk;
+            spriteRenderer.sprite = Rightwalking;
+        }
+        else if (movement.Downwalk == true)
+        {
+            spriteRenderer.sprite = Downwalking;
+        }
+        if (movement.Leftwalk == true)
+        {
+            spriteRenderer.sprite = Leftwalking;
+        }
+        else if (movement.Upwalk == true)
+        {
+            spriteRenderer.sprite = Upwalking;
         }
 
-        else if (movement.sliding)
-        {
-            spriteRenderer.sprite = slide;
-        }
-        //else if (!movement.running)
-        //{
-        //    spriteRenderer.sprite = idle;
-        //}
     }
     
-//}
+}
