@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 8f;
     
     private float inputAxis;
+    internal float lastPos;
 
     private void Awake()
     {
