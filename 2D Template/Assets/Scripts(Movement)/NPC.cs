@@ -12,6 +12,7 @@ public class NPC : MonoBehaviour
     public GameObject contButton;
     public float wordSpeed;
     public bool playerIsClose;
+    private int indez;
 
     void Update()
     {
@@ -43,7 +44,7 @@ public class NPC : MonoBehaviour
 
     IEnumerator Typing()
     {
-        foreach (char letter in dialogue[index].ToCharArray())
+        foreach (char letter in dialogue[indez].ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
