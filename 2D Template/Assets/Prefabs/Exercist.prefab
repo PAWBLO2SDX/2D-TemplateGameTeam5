@@ -10,9 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6720588927173339413}
   - component: {fileID: 4942155379419153003}
-  - component: {fileID: 8686065926091066229}
-  - component: {fileID: 1201142640358955898}
-  - component: {fileID: 3699530575382751625}
+  - component: {fileID: 4938931595282938033}
   m_Layer: 0
   m_Name: Exercist
   m_TagString: Untagged
@@ -33,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4942155379419153003
 SpriteRenderer:
@@ -87,49 +85,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8686065926091066229
-MonoBehaviour:
+--- !u!61 &4938931595282938033
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3858051373458882436}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4434cbbc13ceaff40874a58e620da081, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0
---- !u!114 &1201142640358955898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3858051373458882436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e19fd3c0246d4d4a99003155c860592, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idle: {fileID: 0}
-  Upwalking: {fileID: 0}
-  Rightwalking: {fileID: 0}
-  Leftwalking: {fileID: 0}
-  Downwalking: {fileID: 0}
-  attacking: {fileID: 0}
-  sprint: {fileID: 0}
---- !u!114 &3699530575382751625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3858051373458882436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06c0f898bf6c5bc409221037c9229e1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites: []
-  framerate: 0.16666667
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.017919779, y: -0.050734997}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8, y: 8}
+    newSize: {x: 8, y: 8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8749127, y: 5.869137}
+  m_EdgeRadius: 0
