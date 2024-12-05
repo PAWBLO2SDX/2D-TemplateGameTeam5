@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static SoundManager instance
-    {
-        get; private set;
-    }
+    public static SoundManager instance {  get; private set; }
     private AudioSource source;
 
-    private void Awake()
+    private void awake()
     {
         instance = this;
         source = GetComponent<AudioSource>();
     }
-    public void PlaySound(AudioClip sound)
+    public void Playsound(AudioClip _sound)
     {
-        source.PlayOneShot(sound);
+        source.PlayOneShot(_sound);
     }
+
 }
