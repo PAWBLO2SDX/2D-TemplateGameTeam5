@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private new Camera camera;
     private new Rigidbody2D rigidbody;
 
+
     private Vector2 velocity;
 
     public PlayerMovement(float moveSpeed)
@@ -23,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 8f;
     
     private float inputAxis;
-    internal float lastPos;
+    internal Vector2 lastPos;
 
     private void Awake()
     {

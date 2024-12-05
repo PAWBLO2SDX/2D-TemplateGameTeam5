@@ -5,7 +5,7 @@ using UnityEngine;
 public class ToolController : MonoBehaviour
 {
     PlayerMovement playermov;
-    Rigidbody rb;
+    Rigidbody2D rb;
 
     [SerializeField] float offsetDistance = 1f;
     [SerializeField] float pickupZone = 1.5f;
@@ -13,7 +13,7 @@ public class ToolController : MonoBehaviour
     private void Awake()
     {
         playermov = GetComponent<PlayerMovement>();
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -28,11 +28,10 @@ public class ToolController : MonoBehaviour
     {
         Vector2 pos = rb.position + playermov.lastPos * offsetDistance;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(pos, pickupZone);
-        
+
         foreach(Collider2D c in colliders)
         {
             Tool hit = c.GetComponent<Tool>();
-            if (hit != null)
             {
                 hit.Hit();
                 break;
