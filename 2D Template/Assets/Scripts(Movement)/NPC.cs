@@ -16,11 +16,7 @@ public class NPC : MonoBehaviour
 
     void Update()
     {
-<<<<<<< HEAD:2D Template/Assets/Scripts/Dialogue.cs
-        if(Input.GetKeyDown(KeyCode.E)  && playerIsClose)
-=======
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
->>>>>>> bc65054e6e624a7a5533fa831cd39050fb0e9f9b:2D Template/Assets/Scripts(Movement)/NPC.cs
         {
 
             if (dialoguePanel.activeInHierarchy)
@@ -48,11 +44,7 @@ public class NPC : MonoBehaviour
 
     IEnumerator Typing()
     {
-<<<<<<< HEAD:2D Template/Assets/Scripts/Dialogue.cs
         foreach (char letter in dialogue[indez].ToCharArray())
-=======
-        foreach (char letter in dialogue[index].ToCharArray())
->>>>>>> bc65054e6e624a7a5533fa831cd39050fb0e9f9b:2D Template/Assets/Scripts(Movement)/NPC.cs
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
