@@ -1,9 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public bool Idle = false;
+    public bool Upwalk = false; 
+    public bool Rightwalk = false;
+    public bool Leftwalk = false;
+    public bool Downwalk = false;
     private new Camera camera;
     private new Rigidbody2D rigidbody;
 
@@ -27,22 +33,44 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (velocity.y == 0f || velocity.x == 0f)
+        {
+            Idle = true;
+        }
+        else
+        {
+            Idle = false;
+        }
      HorizontalMovement();
+     VerticalMovement();
     }
 
     private void HorizontalMovement()
     {
         inputAxis = Input.GetAxis("Horizontal");
         velocity.x = Mathf.MoveTowards(velocity.x, inputAxis * moveSpeed, moveSpeed * Time.deltaTime);
+        if (velocity.x > 0f)
+        {
+            Rightwalk = true;
+            transform.eulerAngles = Vector3.zero;
+        }
+        if (velocity.x < 0f)
+        {
+            Leftwalk = true;
+            transform.eulerAngles = new Vector3(0f, 180f, 0f);
+        }
     }
 
     private void VerticalMovement()
     {
-        VerticalMovement();
-    }
-
-    private void VertiaclMovement()
-    {
+        if (velocity.y > 0f)
+        {
+            Upwalk = true;
+        }
+        if (velocity.y < 0f)
+        {
+            Downwalk = true;
+        }
         inputAxis = Input.GetAxis("Vertical");
         velocity.y = Mathf.MoveTowards(velocity.y, inputAxis * moveSpeed, moveSpeed * Time.deltaTime);
     }
