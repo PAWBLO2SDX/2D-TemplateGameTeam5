@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class SideScrolling : MonoBehaviour
@@ -12,7 +13,9 @@ public class SideScrolling : MonoBehaviour
     private void LateUpdate()
     {
         Vector3 cameraPosition = transform.position;
-        cameraPosition.x = Mathf.Max(cameraPosition.x, player.position.x);
+        cameraPosition.x = player.position.x;
+        cameraPosition.y = player.position.y;
         transform.position = cameraPosition;
+
     }
 }
