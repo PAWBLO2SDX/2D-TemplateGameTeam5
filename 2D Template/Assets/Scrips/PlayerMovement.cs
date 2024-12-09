@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private new Camera camera;
     private new Rigidbody2D rigidbody;
 
+
     private Vector2 velocity;
 
     public PlayerMovement(float moveSpeed)
@@ -21,9 +22,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public float moveSpeed = 8f;
+    public float turnspeed = 0;
     
     private float inputAxis;
-    internal float lastPos;
+    internal Vector2 lastPos;
 
     private void Awake()
     {
@@ -48,16 +50,23 @@ public class PlayerMovement : MonoBehaviour
     private void HorizontalMovement()
     {
         inputAxis = Input.GetAxis("Horizontal");
-        velocity.x = Mathf.MoveTowards(velocity.x, inputAxis * moveSpeed, moveSpeed * Time.deltaTime);
+        velocity.x = Mathf.MoveTowards(velocity.x, inputAxis * moveSpeed, turnspeed * Time.deltaTime);
         if (velocity.x > 0f)
         {
             Rightwalk = true;
+            Leftwalk = false;
             transform.eulerAngles = Vector3.zero;
         }
-        if (velocity.x < 0f)
+        else if (velocity.x < 0f)
         {
             Leftwalk = true;
+            Rightwalk = false;
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
+        }
+        else
+        {
+            Leftwalk = false;
+            Rightwalk = false;
         }
     }
 
@@ -66,13 +75,20 @@ public class PlayerMovement : MonoBehaviour
         if (velocity.y > 0f)
         {
             Upwalk = true;
+            Downwalk = false;
         }
-        if (velocity.y < 0f)
+        else if (velocity.y < 0f)
         {
             Downwalk = true;
+            Upwalk = false;
+        }
+        else
+        {
+            Downwalk = false;
+            Upwalk = false;
         }
         inputAxis = Input.GetAxis("Vertical");
-        velocity.y = Mathf.MoveTowards(velocity.y, inputAxis * moveSpeed, moveSpeed * Time.deltaTime);
+        velocity.y = Mathf.MoveTowards(velocity.y, inputAxis * moveSpeed, turnspeed * Time.deltaTime);
     }
 
     private void FixedUpdate()
