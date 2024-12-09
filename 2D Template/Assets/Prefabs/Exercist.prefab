@@ -10,10 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 6720588927173339413}
   - component: {fileID: 4942155379419153003}
+  - component: {fileID: 8114411882749737141}
+  - component: {fileID: 7166385151366638245}
+  - component: {fileID: 2361527471712808581}
   - component: {fileID: 4938931595282938033}
+  - component: {fileID: 3777762400449842138}
   m_Layer: 0
   m_Name: Exercist
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,6 +89,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8114411882749737141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3858051373458882436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434cbbc13ceaff40874a58e620da081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Idle: 0
+  Upwalk: 0
+  Rightwalk: 0
+  Leftwalk: 0
+  Downwalk: 0
+  moveSpeed: 0
+--- !u!114 &7166385151366638245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3858051373458882436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e19fd3c0246d4d4a99003155c860592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: 05ed122fe6e3f0f479c636ab8d8ff3e9, type: 3}
+  Upwalking: {fileID: 21300000, guid: bfff531daa1e2bf48b3f14b50102306c, type: 3}
+  Rightwalking: {fileID: 21300000, guid: 74db68bb3493a264cafa69305b5a104f, type: 3}
+  Leftwalking: {fileID: 21300000, guid: 74db68bb3493a264cafa69305b5a104f, type: 3}
+  Downwalking: {fileID: 21300000, guid: 05ed122fe6e3f0f479c636ab8d8ff3e9, type: 3}
+  attacking: {fileID: 0}
+  sprint: {fileID: 2361527471712808581}
+--- !u!114 &2361527471712808581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3858051373458882436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c0f898bf6c5bc409221037c9229e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []
+  framerate: 0.16666667
 --- !u!61 &4938931595282938033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -111,3 +166,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8749127, y: 5.869137}
   m_EdgeRadius: 0
+--- !u!50 &3777762400449842138
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3858051373458882436}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
