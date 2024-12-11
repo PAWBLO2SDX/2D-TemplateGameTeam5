@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 4139968726373550}
   - component: {fileID: 4139968726371154}
   - component: {fileID: 4139968726371155}
+  - component: {fileID: 1156881349}
+  - component: {fileID: 1156881354}
+  - component: {fileID: 1156881359}
   m_Layer: 0
   m_Name: Banchee
   m_TagString: Untagged
@@ -29,11 +32,11 @@ Transform:
   m_GameObject: {fileID: 4139968726373551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.96, y: 4.33, z: 0}
-  m_LocalScale: {x: 5.157488, y: 5.4271026, z: 1}
+  m_LocalScale: {x: 4, y: 3.782, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4139968726371153
 SpriteRenderer:
@@ -141,7 +144,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.03}
+  m_Offset: {x: 0.011272281, y: 0.027615607}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -152,5 +155,87 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.37, y: 0.53}
+  m_Size: {x: 0.37986857, y: 0.5846242}
   m_EdgeRadius: 0
+--- !u!114 &1156881349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4139968726373551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  data:
+    dataString: UEsDBBQAAAgIAACAn+t57pBdZAIAABkFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzk0GCB+ht5QQ0kMSJrSTiy+LtMYaZMkjyXwkw3/vSraxS6cnxNu3u2+fVv5iUrsCuTd2aaV4MQLZ9x57EHvQHAX71msJz3iErdFr+YkN70MKnwUSRM47eGkIH4Q0Z3L0VvIHvVWB3Cew1DI1Nl+ILc6N847gFJRDClnjQ7Ym6KvHjvRzMwspJzoNp+H0SadZv3emI0ft0bbUhtjQKlapuYK8QBEkt+TpoGaPBpGmaZia0b8dh+pGKelqLcyfijjrusjQYhhWSKDRYv/B7R0BGcpt5oPQbvZbmjr0tSoLp0dpyaOqLPthKuNycLtK2h5UGRpNRlFVVfPln/BNJTq1Jn9u2g76oYXPJN+9w4mD8x1ju/BjR3k06ABqBxuFHxnqV7O0ptSik1s6HD7Sf29L7I42z5DvWrzSegWWxf/vJwxxjtMf50rmm2j9qALWykTD4+2jpcv5SYrjbri6BKFBxW+Hv2DbXaI68CSt8xSqx9RB3saUNlDZIpoWpin93FiNEa5FF6hB+dOKyvjrK7yKddpeRZ4gPJe6eR1rXsFVSoRbfr9/FVqZw+W2XGYOL+iyt9IrqbEVHQKv5NPcaF1tWNeTJm1d2hR4J21bSvH3brHZAMYzuBtP76ezez7e3PDZECYCJ3fphI/SzYjF5ZOa5gS1qoTW9tCt6ba4pkULFcNXpbe0UMRtFxYOS/mZm47lUqdmzS2ifqsqXISjpSb0MMVCSDJojd5LHe+bfSVMGb5DkVwKJXHSxdFbSNoqCSvk3viAJGwePxsJC/Bll1cW9xIPoXlT7MzOfwBQSwMEFAAACAgAAICf63Emb+JtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tJKlYaKpZaKxqbmFuaVFsmmSbrKlUaJZSqqZcZpZsklakolSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAICf63nukF1kAgAAGQUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAICf63Emb+JtAAAAeAAAAAkAJAAAAAAAAAAAAAAAsQIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABpAwAAAAA=
+    upgradeData: 
+    file_cachedStartup: {fileID: 0}
+    data_cachedStartup: 
+    cacheStartup: 0
+  showNavGraphs: 1
+  showUnwalkableNodes: 1
+  debugMode: 0
+  debugFloor: 0
+  debugRoof: 1
+  manualDebugFloorRoof: 0
+  showSearchTree: 0
+  unwalkableNodeDebugSize: 0.3
+  logPathResults: 1
+  maxNearestNodeDistance: 100
+  scanOnStartup: 1
+  fullGetNearestSearch: 0
+  prioritizeGraphs: 0
+  prioritizeGraphsLimit: 1
+  colorSettings:
+    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
+    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
+    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
+    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
+    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
+    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    _AreaColors:
+    - {r: 0, g: 0, b: 0, a: 0}
+  tagNames: []
+  heuristic: 2
+  heuristicScale: 1
+  threadCount: 1
+  maxFrameTime: 1
+  batchGraphUpdates: 0
+  graphUpdateBatchingInterval: 0.2
+  euclideanEmbedding:
+    mode: 0
+    seed: 0
+    pivotPointRoot: {fileID: 0}
+    spreadOutCount: 1
+  showGraphs: 1
+--- !u!114 &1156881354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4139968726373551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a07f066fc21173c4fb74523b1da173de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aiPath: {fileID: 0}
+--- !u!114 &1156881359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4139968726373551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954315039767fe74fa198a2f6c1040de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
+  playerHealth: {fileID: 0}
