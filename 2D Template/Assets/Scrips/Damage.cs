@@ -17,15 +17,16 @@ public class Damage : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "player")
-        {
-            if (playerHealth == null) 
-            {
-                playerHealth = collision.gameObject.GetComponent<Health>();
-            }
-            playerHealth.TakeDamage(2);
-        }
-    }
+      if(collision.gameObject.tag == "Player")
+      {
+          if (playerHealth == null) 
+          {
+            playerHealth = collision.gameObject.GetComponent<Health>();
+          }
+          playerHealth.TakeDamage(2);
+      }
+    }   
 }
