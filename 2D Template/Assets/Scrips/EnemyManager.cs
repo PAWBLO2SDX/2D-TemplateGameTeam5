@@ -9,7 +9,7 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] private GameObject[] enemyPrefabs;
 
     [SerializeField] private bool canSpawn = true;
-    private void start(){
+    private void Start(){
         StartCoroutine(Spawner());
     }
     private IEnumerator Spawner ()
