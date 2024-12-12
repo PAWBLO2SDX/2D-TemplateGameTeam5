@@ -7,6 +7,11 @@ public class GhostGFX : MonoBehaviour
 {
     public AIPath aiPath;
 
+    private void Start()
+    {
+        GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
     // Update is called once per frame
     void Update()
     {
