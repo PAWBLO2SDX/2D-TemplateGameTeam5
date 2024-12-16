@@ -170,6 +170,8 @@ MonoBehaviour:
   spawnRate: 60
   enemyPrefabs:
   - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
+  - {fileID: 1479668626731894145, guid: e75cf6636acca434b943f24b41343bdc, type: 3}
+  - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
   canSpawn: 1
 --- !u!1 &212214621
 GameObject:
@@ -217,6 +219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 60
   enemyPrefabs:
+  - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
+  - {fileID: 1479668626731894145, guid: e75cf6636acca434b943f24b41343bdc, type: 3}
   - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
   canSpawn: 1
 --- !u!1 &279177358
@@ -266,6 +270,8 @@ MonoBehaviour:
   spawnRate: 20
   enemyPrefabs:
   - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
+  - {fileID: 1479668626731894145, guid: e75cf6636acca434b943f24b41343bdc, type: 3}
+  - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
   canSpawn: 1
 --- !u!1 &375883618
 GameObject:
@@ -313,6 +319,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 45
   enemyPrefabs:
+  - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
+  - {fileID: 1479668626731894145, guid: e75cf6636acca434b943f24b41343bdc, type: 3}
   - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
   canSpawn: 1
 --- !u!1 &522006870
@@ -362,6 +370,8 @@ MonoBehaviour:
   spawnRate: 40
   enemyPrefabs:
   - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
+  - {fileID: 1479668626731894145, guid: e75cf6636acca434b943f24b41343bdc, type: 3}
+  - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
   canSpawn: 1
 --- !u!1 &580666659
 GameObject:
@@ -409,6 +419,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 30
   enemyPrefabs:
+  - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
+  - {fileID: 1479668626731894145, guid: e75cf6636acca434b943f24b41343bdc, type: 3}
   - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
   canSpawn: 1
 --- !u!1 &624961320
@@ -641,6 +653,8 @@ MonoBehaviour:
   spawnRate: 10
   enemyPrefabs:
   - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
+  - {fileID: 1479668626731894145, guid: e75cf6636acca434b943f24b41343bdc, type: 3}
+  - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
   canSpawn: 1
 --- !u!114 &1385263628
 MonoBehaviour:
@@ -656,7 +670,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   maxHealth: 10
-  slider: {fileID: 0}
 --- !u!82 &1385263629
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1021,6 +1034,8 @@ MonoBehaviour:
   spawnRate: 50
   enemyPrefabs:
   - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
+  - {fileID: 1479668626731894145, guid: e75cf6636acca434b943f24b41343bdc, type: 3}
+  - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
   canSpawn: 1
 --- !u!1 &1680471564
 GameObject:
@@ -1170,6 +1185,8 @@ MonoBehaviour:
   spawnRate: 60
   enemyPrefabs:
   - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
+  - {fileID: 1479668626731894145, guid: e75cf6636acca434b943f24b41343bdc, type: 3}
+  - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
   canSpawn: 1
 --- !u!1 &1736873558
 GameObject:
@@ -1218,6 +1235,8 @@ MonoBehaviour:
   spawnRate: 50
   enemyPrefabs:
   - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
+  - {fileID: 1479668626731894145, guid: e75cf6636acca434b943f24b41343bdc, type: 3}
+  - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
   canSpawn: 1
 --- !u!1 &1891686573
 GameObject:
@@ -1265,6 +1284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 10
   enemyPrefabs:
+  - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
   - {fileID: 4139968726373551, guid: a3ab672880828024ebc6aa63060f92a3, type: 3}
   canSpawn: 1
 --- !u!1 &1970606957
