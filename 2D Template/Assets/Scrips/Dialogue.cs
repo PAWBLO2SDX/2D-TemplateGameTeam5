@@ -31,6 +31,7 @@ public class Dialogue : MonoBehaviour
     private Sprite[] portrait;
 
     private bool dialogueActivated;
+    private int step;
 
 
     
@@ -40,10 +41,20 @@ public class Dialogue : MonoBehaviour
     {
         if (Input.GetButtonDown("Interact") && dialogueActivated == true) 
         {
-            dialogueCanvas.SetActive(true);
-            speakerText.text = speaker[0];
-            dialogueText.text = dialogueWords[0];
-            portraitImage.sprite = portrait[0];
+            if (step >= speaker.Length) 
+            {
+                dialogueCanvas.SetActive(false);
+                step = 0;
+            }
+            else
+            {
+                dialogueCanvas.SetActive(true);
+                speakerText.text = speaker[0];
+                dialogueText.text = dialogueWords[0];
+                portraitImage.sprite = portrait[0];
+            }
+
+           
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
