@@ -7,6 +7,7 @@ public class Health : MonoBehaviour
 {
     public int health;
     public int maxHealth = 10;
+    public Image healthBar;
 
  
 
@@ -20,7 +21,7 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, health);
     }
     public void TakeDamage(int amount)
     {
