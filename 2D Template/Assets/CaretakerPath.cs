@@ -8,6 +8,7 @@ public class CaretakerPath : MonoBehaviour
     public Transform[] patrolPoints;
     public int targetPoint;
     public float speed;
+    private bool can_Move = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +18,19 @@ public class CaretakerPath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position == patrolPoints[targetPoint].position)
+        if (transform.position == patrolPoints[targetPoint].position && can_Move == true)
         {
-            increaseTargetInt();
+            StartCoroutine(NextDelay());
         }
         transform.position = Vector3.MoveTowards(transform.position, patrolPoints[targetPoint].position, speed * Time.deltaTime);
+    }
+
+    private IEnumerator NextDelay()
+    {
+        can_Move = false;
+        yield return new WaitForSeconds(3);
+        can_Move = true;
+        increaseTargetInt();
     }
 
     void increaseTargetInt()
