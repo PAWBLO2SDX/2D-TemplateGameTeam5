@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class HealthHeart : MonoBehaviour
 {
-    public Sprite fullHeart,half, halfHeart, emptyHeart;
+    public Sprite fullHeart,halfHeart, emptyHeart;
+
     Image heartImage;
 
     private void Awake()

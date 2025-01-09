@@ -11,17 +11,6 @@ public class HealthHeartBar : MonoBehaviour
     public int heartStatusRemainder;
     public GameObject heartPrefab;
     List<HealthHeart> hearts = new List<HealthHeart>();
-
-    private void OnEnable()
-    {
-     
-    }
-
-    private void OnDiasable()
-    {
-      
-    }
-
     public void Drawhearts()
     {
         ClearHearts();
@@ -40,6 +29,15 @@ public class HealthHeartBar : MonoBehaviour
             int heartStatusRemainder = (int)Mathf.Clamp( health - (i*2), 0, 2);
         }
         //make 5 hearts 
+    }
+    private void OnEnable()
+    {
+
+    }
+
+    private void OnDiasable()
+    {
+        
     }
 
     public void CreateEmptyHeart()
