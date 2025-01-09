@@ -5,18 +5,21 @@ using UnityEngine.UI;
 
 public class HealthHeartBar : MonoBehaviour
 {
+    public int health;
+    public int maxHealth = 10;
+    public int maxHealthRemainder;
+    public int heartStatusRemainder;
     public GameObject heartPrefab;
-    public float Playerhealth, playerHealth;
     List<HealthHeart> hearts = new List<HealthHeart>();
 
     private void OnEnable()
     {
-        PlayerHealth.OnPlayerDamaged += DrawHearts;
+     
     }
 
     private void OnDiasable()
     {
-        PlayerHealth.OnPlayerDamaged -= Drawhearts;
+      
     }
 
     public void Drawhearts()
@@ -25,8 +28,8 @@ public class HealthHeartBar : MonoBehaviour
 
         //determine how many hearts total
         //based off of max Health
-        float maxHealthRemainder = playerHealth.maxHealth % 2; //1
-        int heartsToMake = (int)(playerHealth.maxHealth / 2 + maxHealthremainder);
+        int maxHealthRemainder= maxHealth % 2; //1
+        int heartsToMake = (int)(maxHealth / 2 + maxHealthRemainder);
         for (int i = 0; i < heartsToMake; i++) 
         {
             CreateEmptyHeart (); // make total hearts needed 
@@ -34,7 +37,7 @@ public class HealthHeartBar : MonoBehaviour
 
         for(int i = 0; i < hearts.Count; i++)
         {
-            int heartStausRemainder = (int)Mathf.Clamp(playerHealth.Health - (i*2), 0, 2);
+            int heartStatusRemainder = (int)Mathf.Clamp( health - (i*2), 0, 2);
         }
         //make 5 hearts 
     }
@@ -45,7 +48,7 @@ public class HealthHeartBar : MonoBehaviour
         newHeart.transform.SetParent(transform);
 
         HealthHeart heartComponent = newHeart.GetComponent<HealthHeart>();
-        heartComponent.SetHeartImage(HealthHeart.HeartStatus.Empty);
+        heartComponent.SetHeartImage(HeartStatus.Empty);
         hearts.Add(heartComponent);
     }
 

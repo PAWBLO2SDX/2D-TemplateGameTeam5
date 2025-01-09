@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class HealthHeart : MonoBehaviour
 {
-    public Sprite fullHeart, halfHeart, emptyHeart;
+    public Sprite fullHeart,half, halfHeart, emptyHeart;
     Image heartImage;
 
     private void Awake()
@@ -12,14 +12,14 @@ public class HealthHeart : MonoBehaviour
         heartImage = GetComponent<Image>();
     }
 
-    public void SetHeartImage(HeartStatus Status)
+    public void SetHeartImage(HeartStatus status)
     {
-        switch (Status)
+        switch (status)
         {
             case HeartStatus.Empty:
                 heartImage.sprite = emptyHeart;
                 break;
-            case HeartStatus.half:
+            case HeartStatus.Half:         
                 heartImage.sprite = halfHeart;
                 break;
             case HeartStatus.Full:
