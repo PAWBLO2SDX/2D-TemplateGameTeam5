@@ -6,10 +6,9 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    public int health, maxHealth = 10;
-   
-    
-    
+    public int health, maxHealth;
+    public static event Action OnPlayerDamaged;
+    public static event Action OnPlayerDeath;
     public Image healthBar;
 
     
@@ -27,11 +26,12 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 10);
+      
     }
     public void TakeDamage(int amount)
     {
         health -= amount;
+        OnPlayerDamaged?.Invoke();
         
         if(health <= 0)
         {

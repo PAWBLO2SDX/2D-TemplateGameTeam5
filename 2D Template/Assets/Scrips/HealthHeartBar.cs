@@ -32,12 +32,12 @@ public class HealthHeartBar : MonoBehaviour
     }
     private void OnEnable()
     {
-
+        Health.OnPlayerDamaged += Drawhearts;
     }
 
     private void OnDiasable()
     {
-        
+        Health.OnPlayerDamaged -= Drawhearts;
     }
 
     public void CreateEmptyHeart()
