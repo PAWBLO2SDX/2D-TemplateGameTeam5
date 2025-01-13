@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class HealthHeartBar : MonoBehaviour
 {
     public int health;
-    public int maxHealth = 10;
+    public int maxHealth;
     public int maxHealthRemainder;
     public int heartStatusRemainder;
     public GameObject heartPrefab;

@@ -11,23 +11,16 @@ public class Health : MonoBehaviour
     public static event Action OnPlayerDeath;
     public Image healthBar;
 
+    public SpriteRenderer playerSr;
+    public PlayerMovement playerMovement;
+
     
 
     // Start is called before the first frame update
     public void Start()
     {
         health = maxHealth;
-    }
-    
-       
-   
-    
-
-    // Update is called once per frame
-    void Update()
-    {
-      
-    }
+    } 
     public void TakeDamage(int amount)
     {
         health -= amount;
@@ -35,9 +28,8 @@ public class Health : MonoBehaviour
         
         if(health <= 0)
         {
-            health = 0;
-            
-            Destroy(gameObject);
+            playerSr.enabled = false;
+            playerMovement.enabled = false;
         }
     }
 }
