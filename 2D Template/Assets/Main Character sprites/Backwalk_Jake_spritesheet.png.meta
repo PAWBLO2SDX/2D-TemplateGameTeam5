@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 62
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,7 +129,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Backwalk_Jake_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 10
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1f546017069d64289252b74f312cdd
+      internalID: 117932304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backwalk_Jake_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 11
+        width: 60
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999f1e89be382724d837bc85664e8287
+      internalID: 645215865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backwalk_Jake_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 10
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d6847ce9085654ebae56cb33d10ce6
+      internalID: -1081508161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backwalk_Jake_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 10
+        width: 62
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe86be7c7355c646b662f2a260de8e8
+      internalID: 1172924278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backwalk_Jake_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 10
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8bbb991191e1540a7d3af11b5b36bb
+      internalID: -1892940403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backwalk_Jake_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 11
+        width: 60
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f186d6b2d44363040be4af336311035b
+      internalID: 98495688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backwalk_Jake_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 10
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce20523313c9ad947b54569efd189550
+      internalID: -1789913319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backwalk_Jake_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 10
+        width: 62
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2429aaa20928aef4080117e5ae74509b
+      internalID: 862700592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -140,7 +308,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Backwalk_Jake_spritesheet_7: 862700592
+      Backwalk_Jake_spritesheet_4: -1892940403
+      Backwalk_Jake_spritesheet_3: 1172924278
+      Backwalk_Jake_spritesheet_2: -1081508161
+      Backwalk_Jake_spritesheet_1: 645215865
+      Backwalk_Jake_spritesheet_5: 98495688
+      Backwalk_Jake_spritesheet_6: -1789913319
+      Backwalk_Jake_spritesheet_0: 117932304
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
