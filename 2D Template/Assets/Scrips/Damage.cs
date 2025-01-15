@@ -15,11 +15,17 @@ public class Damage : MonoBehaviour
     {
         
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
+    {
+        OnCollisionEnter2D(collision, damage);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision, int damage)
     {
         if (collision.gameObject.tag == "Player")
         {
-            Health.TakeDamage(damage);
+            Health.TakeDamage(amount: damage);
         }
     }
 }

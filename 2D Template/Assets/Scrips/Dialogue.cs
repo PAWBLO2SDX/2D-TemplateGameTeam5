@@ -49,9 +49,10 @@ public class Dialogue : MonoBehaviour
             else
             {
                 dialogueCanvas.SetActive(true);
-                speakerText.text = speaker[0];
-                dialogueText.text = dialogueWords[0];
-                portraitImage.sprite = portrait[0];
+                speakerText.text = speaker[step];
+                dialogueText.text = dialogueWords[step];
+                portraitImage.sprite = portrait[step];
+                step += 1;
             }
 
            
