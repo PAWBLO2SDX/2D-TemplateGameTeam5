@@ -129,7 +129,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Fowardwalk_Jake_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 9
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edec0e74f40b970449d74a5fb1c36172
+      internalID: 1678012534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fowardwalk_Jake_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 9
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df8e62168052a548ae6a76381b71e20
+      internalID: 1991713627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fowardwalk_Jake_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 9
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5deb39de67685c438af57bd9f556317
+      internalID: -964845446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fowardwalk_Jake_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 9
+        width: 62
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6985745dbd42003488f9e5811970cbf9
+      internalID: -1781066780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fowardwalk_Jake_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 9
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a135cedb4f54ce74d803aeafd423d2a4
+      internalID: -1751165622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fowardwalk_Jake_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 9
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d61b2c288841c44acdf7319e6e7e3e
+      internalID: -1122401906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fowardwalk_Jake_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 8
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ffdff4b69cda14faa4a7aaf40ef778
+      internalID: 1606934172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fowardwalk_Jake_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 9
+        width: 62
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed62f186cc239724f803af20f3418878
+      internalID: -1070151530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -140,7 +308,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fowardwalk_Jake_spritesheet_4: -1751165622
+      Fowardwalk_Jake_spritesheet_0: 1678012534
+      Fowardwalk_Jake_spritesheet_5: -1122401906
+      Fowardwalk_Jake_spritesheet_3: -1781066780
+      Fowardwalk_Jake_spritesheet_6: 1606934172
+      Fowardwalk_Jake_spritesheet_7: -1070151530
+      Fowardwalk_Jake_spritesheet_2: -964845446
+      Fowardwalk_Jake_spritesheet_1: 1991713627
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

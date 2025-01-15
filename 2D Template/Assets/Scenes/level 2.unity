@@ -1355,8 +1355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954315039767fe74fa198a2f6c1040de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 0}
   damage: 2
-  playerHealth: {fileID: 0}
 --- !u!4 &1526070643 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6720588927173339413, guid: 063388ea036585e439a9c7a0f5859280, type: 3}
@@ -1381,6 +1381,7 @@ MonoBehaviour:
     m_Bits: 0
   attackRange: 0.78
   attackDamage: 40
+  attackRate: 2
 --- !u!1001 &1563536514
 PrefabInstance:
   m_ObjectHideFlags: 0
