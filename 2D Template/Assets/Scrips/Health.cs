@@ -11,8 +11,6 @@ public class Health : MonoBehaviour
     public static event Action OnPlayerDeath;
     public Image healthBar;
 
-    public SpriteRenderer playerSr;
-    public PlayerMovement playerMovement;
 
     
 
@@ -28,8 +26,7 @@ public class Health : MonoBehaviour
         
         if(health <= 0)
         {
-            playerSr.enabled = false;
-            playerMovement.enabled = false;
+           
         }
     }
 }
