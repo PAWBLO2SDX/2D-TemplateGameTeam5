@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 177458840520578331}
   - component: {fileID: 5431088314654758215}
   - component: {fileID: 4300155386422063465}
+  - component: {fileID: 432752924235226593}
   m_Layer: 0
   m_Name: spirit
   m_TagString: Untagged
@@ -219,5 +220,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954315039767fe74fa198a2f6c1040de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: {fileID: 0}
   damage: 2
-  playerHealth: {fileID: 0}
+--- !u!114 &432752924235226593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479668626731894145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b45b04c59ffdfb34ca8fe5c9a1c326e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 6
+  maxHealth: 6
+  healthBar: {fileID: 0}
+  playerSr: {fileID: 0}
+  playerMovement: {fileID: 0}

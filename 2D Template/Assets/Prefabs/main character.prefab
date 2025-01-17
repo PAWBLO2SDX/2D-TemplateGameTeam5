@@ -10,8 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6431951040349009727}
   - component: {fileID: -4550285415906735462}
+  - component: {fileID: 5551692472465003365}
   - component: {fileID: 5818580886333187430}
   - component: {fileID: 3684287141215258919}
+  - component: {fileID: 4308070757633799274}
+  - component: {fileID: 6035564047312984958}
+  - component: {fileID: 2047736318810684600}
   - component: {fileID: 3470954076528532066}
   m_Layer: 0
   m_Name: main character
@@ -29,11 +33,11 @@ Transform:
   m_GameObject: {fileID: 4392276087154340057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -102.534966, y: -67.92695, z: 0.11648479}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-4550285415906735462
 MonoBehaviour:
@@ -47,13 +51,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e19fd3c0246d4d4a99003155c860592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idle: {fileID: 1678012534, guid: 0284e1ddb8c770940859e16f27149beb, type: 3}
+  idle: {fileID: 21300000, guid: b8e247ebfdeafa442b3b5a40100ed540, type: 2}
   Upwalking: {fileID: 117932304, guid: 31dd39e37c078564ca65fdea6b4b1626, type: 3}
   Rightwalking: {fileID: -238739823, guid: f2618aa5c18f7c945ab7bbe81614d2b8, type: 3}
   Leftwalking: {fileID: -238739823, guid: f2618aa5c18f7c945ab7bbe81614d2b8, type: 3}
   Downwalking: {fileID: 1678012534, guid: 0284e1ddb8c770940859e16f27149beb, type: 3}
-  attacking: {fileID: 0}
-  sprint: {fileID: 0}
+  attacking: {fileID: 975958963, guid: f32a667638d071f4c9a479c52786fffe, type: 3}
+  sprint: {fileID: 5551692472465003365}
+--- !u!114 &5551692472465003365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4392276087154340057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c0f898bf6c5bc409221037c9229e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []
+  framerate: 0.16666667
 --- !u!114 &5818580886333187430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,8 +89,8 @@ MonoBehaviour:
   Rightwalk: 0
   Leftwalk: 0
   Downwalk: 0
-  moveSpeed: 0
-  turnspeed: 0
+  moveSpeed: 8
+  turnspeed: 50
 --- !u!212 &3684287141215258919
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -114,7 +132,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: 1678012534, guid: 0284e1ddb8c770940859e16f27149beb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b8e247ebfdeafa442b3b5a40100ed540, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -125,6 +143,47 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4308070757633799274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4392276087154340057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b278f75715ff0af44b0d3a8ee989c5e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6035564047312984958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4392276087154340057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aaa9c881c4bc71469d12651ba25068b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2047736318810684600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4392276087154340057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b45b04c59ffdfb34ca8fe5c9a1c326e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  maxHealth: 10
+  healthBar: {fileID: 0}
+  playerSr: {fileID: 0}
+  playerMovement: {fileID: 0}
 --- !u!95 &3470954076528532066
 Animator:
   serializedVersion: 4

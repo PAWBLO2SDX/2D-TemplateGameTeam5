@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public bool Downwalk = false;
     private new Camera camera;
     private new Rigidbody2D rigidbody;
-
+    private Animator animator;
 
     private Vector2 velocity;
 
@@ -30,12 +30,13 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         camera = Camera.main;
     }
 
     private void Update()
     {
-        if (velocity.y == 0f || velocity.x == 0f)
+        if (velocity.y == 0f && velocity.x == 0f)
         {
             Idle = true;
         }
@@ -50,18 +51,20 @@ public class PlayerMovement : MonoBehaviour
     private void HorizontalMovement()
     {
         inputAxis = Input.GetAxis("Horizontal");
+        animator.SetFloat("horizontal",inputAxis);
+
         velocity.x = Mathf.MoveTowards(velocity.x, inputAxis * moveSpeed, turnspeed * Time.deltaTime);
         if (velocity.x > 0f)
         {
             Rightwalk = true;
             Leftwalk = false;
-            transform.eulerAngles = Vector3.zero;
+            transform.eulerAngles = new Vector3(0f, 180f, 0f);
         }
         else if (velocity.x < 0f)
         {
             Leftwalk = true;
             Rightwalk = false;
-            transform.eulerAngles = new Vector3(0f, 180f, 0f);
+            transform.eulerAngles = Vector3.zero;
         }
         else
         {
@@ -88,6 +91,7 @@ public class PlayerMovement : MonoBehaviour
             Upwalk = false;
         }
         inputAxis = Input.GetAxis("Vertical");
+        animator.SetFloat("virtical", inputAxis);
         velocity.y = Mathf.MoveTowards(velocity.y, inputAxis * moveSpeed, turnspeed * Time.deltaTime);
     }
 

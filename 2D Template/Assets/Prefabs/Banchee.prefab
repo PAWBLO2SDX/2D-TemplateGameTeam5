@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2419904731462021170}
   - component: {fileID: 5596259903812139678}
   - component: {fileID: 516521366}
+  - component: {fileID: 798295650899573951}
   m_Layer: 0
   m_Name: Banchee
   m_TagString: Untagged
@@ -163,8 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954315039767fe74fa198a2f6c1040de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: {fileID: 0}
   damage: 2
-  playerHealth: {fileID: 0}
 --- !u!114 &2419904731462021170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   drawGizmos: 1
-  detailedGizmos: 0
+  detailedGizmos: 1
   startEndModifier:
     addPoints: 0
     exactStartPoint: 3
@@ -206,7 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 5
-  radius: 0.3
+  radius: 1.17
   height: 1
   canMove: 1
   maxSpeed: 3
@@ -223,7 +224,7 @@ MonoBehaviour:
     mode: 2
     interval: 0.5
     sensitivity: 10
-    maximumInterval: 2
+    maximumInterval: 2.12
     visualizeSensitivity: 0
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
@@ -249,6 +250,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 6720588927173339413, guid: 063388ea036585e439a9c7a0f5859280, type: 3}
+--- !u!114 &798295650899573951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4139968726373551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b45b04c59ffdfb34ca8fe5c9a1c326e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 6
+  maxHealth: 6
+  healthBar: {fileID: 0}
+  playerSr: {fileID: 0}
+  playerMovement: {fileID: 0}
 --- !u!1 &6855885268190398626
 GameObject:
   m_ObjectHideFlags: 0
